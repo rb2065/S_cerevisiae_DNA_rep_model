@@ -37,7 +37,7 @@ freeFF_080624.py : Calculates the mean number of availabe firing factors at diff
 
 The experimentally determined replication times were sourced from (Muller et al., 2014). Linear interpolation was used to estimate the experimental replication timings at each kb.
 
-References:
+## References:
 
 Boemo, M.A., Cardelli, L. and Nieduszynski, C.A., 2020. The Beacon Calculus: A formal method for the flexible and concise modelling of biological systems. PLoS computational biology, 16(3), p.e1007651.
 
