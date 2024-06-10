@@ -6,9 +6,13 @@ This repository contains the Beacon Calculus (bcs) script used for the model. Be
 
 This repository also contains example Python sripts used to extract various measures of DNA replication dynamics from the simulation output.
 
-Descriptions of files:
+## Descriptions of files:
+
+### Beacon calculus script
 
 200FF0p05d_fitted.bc : Model with 200 firing factors and recycling rates of 0.05. This is the main model variation used for most analysis. The origin firing rates in this script have already been fitted to experimental replication timing data (Muller et al., 2014).
+
+### Python scripts
 
 fitting_060624.py : Fits the model iteratively to experimental replication timing data.
 
