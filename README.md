@@ -1,6 +1,6 @@
 # S_cerevisiae_DNA_rep_model
 
-We created a stochastic model for S. cerevisiae whole-genome replication in which origins compete to associate with limtted firing factors, needed for activation, which then recycle for reuse.
+We created a stochastic model for Saccharomyces cerevisiae whole-genome replication in which origins compete to associate with limtted firing factors, needed for activation, which then recycle for reuse.
 
 This repository contains the Beacon Calculus (bcs) script used for the model. Beacon Calculus is an open access software available at https://github.com/MBoemo/bcs.git (Boemo et al., 2020). 
 
