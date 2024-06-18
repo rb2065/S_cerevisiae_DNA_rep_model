@@ -14,25 +14,25 @@ This repository also contains example Python sripts used to extract various meas
 
 ### Python scripts
 
-fitting_060624.py : Fits the model iteratively to experimental replication timing data.
+fitting.py : Fits the model iteratively to experimental replication timing data.
 
-running_080624.py : Runs a specified number of simulations of the model.
+running.py : Runs a specified number of simulations of the model.
 
-repTime_080624.py : Calculates the simulated mean, std, median, upper quartile, and lower quartile of replication timing at each kb of the genome.
+repTime.py : Calculates the simulated mean, std, median, upper quartile, and lower quartile of replication timing at each kb of the genome.
 
-IOD_Sphase_060624.py : Calculates the simulated inter-origin distances (IOD) and durations of the simulations (which represents the simulated length of S-phase).
+IOD_Sphase.py : Calculates the simulated inter-origin distances (IOD) and durations of the simulations (which represents the simulated length of S-phase).
 
-efficiencies_060624.py : Calculates the simulated efficiency of each origin.
+efficiencies.py : Calculates the simulated efficiency of each origin.
 
-RFD_080624.py : Calculates the simulated replication fork directionality (RFD) at each kb of the genome.
+RFD.py : Calculates the simulated replication fork directionality (RFD) at each kb of the genome.
 
-activeForks_080624.py : Calculates the simulated mean number of active replication forks over time.
+activeForks.py : Calculates the simulated mean number of active replication forks over time.
 
-firingTimes_080624.py : Records the times at which each origin fires in the different simulations (from which their firing time distributions can later be plotted).
+firingTimes.py : Records the times at which each origin fires in the different simulations (from which their firing time distributions can later be plotted).
 
-replicons_080624.py : Calculates the simulated mean replicon length of each origin.
+replicons.py : Calculates the simulated mean replicon length of each origin.
 
-freeFF_080624.py : Calculates the mean number of availabe firing factors at different times over the cause of the simulations.
+freeFF.py : Calculates the mean number of availabe firing factors at different times over the cause of the simulations.
 
 
 The experimentally determined replication times were sourced from (Muller et al., 2014). Linear interpolation was used to estimate the experimental replication timings at each kb.
