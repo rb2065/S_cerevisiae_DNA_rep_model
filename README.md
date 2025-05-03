@@ -22,11 +22,17 @@ origin_positions.csv : Processed origin data used in subsequent analysis (only i
 
 
 
-### Beacon calculus script for full model (bcs_scripts subfolder)
+### Beacon Calculus script for full model (bcs_scripts subfolder)
 
 200FF0p05d_fitted.bc : Model with 200 firing factors and recycling rates of 0.05. This is the main model variation used for most analysis. The origin firing rates in this script have already been fitted to experimental replication timing data (Müller et al., 2014).
 
 200FF0p05d_mapOri_fitted.bc : Same as above, except origin and replication fork processes have an additional "ori" parameter which allows the origin forks originate from to be tracked for computing replicon lengths and the number of active replication forks. 
+
+### Example model outputs (bcs_output subfolder)
+
+200FF0p05d_fitted_s10.simulation.bcs : Output from 10 simulations of the fitted model
+
+200FF0p05d_mapOris_fitted_s10.simulation.bcs : Output from 10 simulations of a fitted version of the model with the additional "ori" parameter.
 
 ### Python scripts for full model
 
