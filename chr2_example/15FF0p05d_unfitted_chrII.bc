@@ -1,0 +1,17 @@
+//S. cerevisiae chromosome II replication model
+
+L = 813; //length of S. cerevisiae chrII in kilobases
+fast = 100000; //fast rate
+v = 1.4; //fork velocity in kilobases per minute
+           
+//process definitions
+
+FF[] = {@factor![0],1}.{dwell,0.05}.FF[];
+
+ORI[i,fire] = {@factor?[0],fire}.(FL[i]||FR[i])
+              + {ch?[i],fast};
+FR[i] = {ch![i],fast}.[i < L] -> {~ch?[i+1],v}.FR[i+1];
+FL[i] = {ch![i],fast}.[i > 0] -> {~ch?[i-1],v}.FL[i-1];
+
+//initial processes in the system
+ORI[1,0.00146] || ORI[6,0.00088] || ORI[29,0.00193] || ORI[63,0.00233] || ORI[93,0.00288] || ORI[143,0.00177] || ORI[170,0.00129] || ORI[177,0.00156] || ORI[198,0.00169] || ORI[209,0.00220] || ORI[237,0.00490] || ORI[255,0.00310] || ORI[283,0.00154] || ORI[326,0.00304] || ORI[378,0.00146] || ORI[389,0.00156] || ORI[407,0.00186] || ORI[417,0.00188] || ORI[441,0.00095] || ORI[486,0.00349] || ORI[517,0.00166] || ORI[539,0.00241] || ORI[591,0.00286] || ORI[612,0.00154] || ORI[622,0.00203] || ORI[632,0.00243] || ORI[676,0.00106] || ORI[706,0.00233] || ORI[720,0.00169] || ORI[741,0.00191] || ORI[757,0.00158] || ORI[774,0.00180] || ORI[794,0.00106] || ORI[802,0.00187] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[] || FF[];
